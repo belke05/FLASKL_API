@@ -4,13 +4,13 @@
 <h4>purpose: use this api in a web-app created with React and Node</h4>
 
 <h2>5 Steps</h2>
-<ul>
+
 *  ☑️: set up a model in a jupyter notebook or google colab ipynb</li>
 *  ☑️: create Flask app</li>
 *  ☑️: create a Procfile</li>
 *  ☑️: create requirments.txt</li>
 *  ☑️: deploy to heroku</li>
-</ul>
+
 
 <h2>Notes</h2>
 <p>for the flask app make sure that you convert the received data to the right 
