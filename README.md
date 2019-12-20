@@ -5,16 +5,16 @@
 
 <h2>5 Steps</h2>
 <ul>
-  <li>☑️: set up a model in a jupyter notebook or google colab ipynb</li>
-  <li>☑️: create Flask app</li>
-  <li>☑️: create a Procfile</li>
-  <li>☑️: create requirments.txt</li>
-  <li>☑️: deploy to heroku</li>
+*  ☑️: set up a model in a jupyter notebook or google colab ipynb</li>
+*  ☑️: create Flask app</li>
+*  ☑️: create a Procfile</li>
+*  ☑️: create requirments.txt</li>
+*  ☑️: deploy to heroku</li>
 </ul>
 
 <h2>Notes</h2>
 <p>for the flask app make sure that you convert the received data to the right 
 format in order to make a prediction and then reconvert the prediction to a format that returns a JSON.</p>
 <p>
-Example of a request could be: http://127.0.0.1:7000/predict_salary?experience=2
+Example of a request could be: https://flaskapitemplate.herokuapp.com/predict_salary?experience=2
 </p>
