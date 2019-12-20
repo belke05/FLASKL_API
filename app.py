@@ -15,13 +15,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route("/")
 def my_index():
-  years_experience = flask.request.args.get('experience')
-  years_experience = np.array(np.float(years_experience)).reshape(-1,1)
-  print(years_experience, 'years of experience')
-  prediction = model.predict(years_experience)
-  prediction = prediction.flatten()[0]
-  print(prediction, 'predictions')
-  return flask.jsonify({'prediction': prediction})
+  return "<h1>Welcome to our server !!</h1>"
 
 
 @app.route("/predict_salary", methods=['GET', 'POST'])
@@ -54,5 +48,5 @@ def makePrediction():
 #   payload = {'name' : character}
 #   res = requests.get("https://anapioficeandfire.com/api/characters/", params=payload).json()
 #   return flask.jsonify(res)
-
-app.run(debug=True, port=7000)
+if __name__ == '__main__':
+  app.run(debug=True, port=7000)
