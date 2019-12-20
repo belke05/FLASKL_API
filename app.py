@@ -15,7 +15,13 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route("/")
 def my_index():
-  return flask.render_template("index.html", token="predict my salary")
+  years_experience = flask.request.args.get('experience')
+  years_experience = np.array(np.float(years_experience)).reshape(-1,1)
+  print(years_experience, 'years of experience')
+  prediction = model.predict(years_experience)
+  prediction = prediction.flatten()[0]
+  print(prediction, 'predictions')
+  return flask.jsonify({'prediction': prediction})
 
 
 @app.route("/predict_salary", methods=['GET', 'POST'])
