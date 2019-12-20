@@ -11,3 +11,10 @@
   <li>☑️: create requirments.txt</li>
   <li>☑️: deploy to heroku</li>
 </ul>
+
+<h2>Notes</h2>
+<p>for the flask app make sure that you convert the received data to the right 
+format in order to make a prediction and then reconvert the prediction to a format that returns a JSON.</p>
+<p>
+Example of a request could be: http://127.0.0.1:7000/predict_salary?experience=2
+</p>
