@@ -43,7 +43,7 @@ soupsieve==1.9.5
 spacy==2.1.8
 statsmodels==0.10.1
 tqdm==4.40.0
-urllib3==1.25.7
+urllib3==1.25.8
 webencodings==0.5.1
 Werkzeug==0.16.0
 zipp==0.6.0
