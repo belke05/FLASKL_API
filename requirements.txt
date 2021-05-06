@@ -1,7 +1,7 @@
 autopep8==1.4.4
 backcall==0.1.0
 Flask==1.1.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 gmplot==1.2.0
 idna==2.8
 gunicorn==19.9.0
